@@ -2,20 +2,19 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: stg_customers
+      description: "Stagging customer model"
       columns:
-          - name: id
+          - name: customer_id
             description: "The primary key for this table"
             tests:
                 - unique
                 - not_null
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
+    - name: stg_orders
+      description: "Stagging orders model"
       columns:
-          - name: id
+          - name: Order_ID
             description: "The primary key for this table"
             tests:
-                - unique
                 - not_null
